@@ -64,7 +64,7 @@ Configuration -> Things -> Generic MQTT Thing -> Channels -> + -> :
 
 `MQTT State Topic = tuya/ver3.3/<Tuya ID>/<Tuya KEY>/<Tuya IP>/state`
 
-`MQTT Command Topic = tuya/ver3.3/<Tuya ID>/<Tuya KEY>/<Tuya IP>/state`
+`MQTT Command Topic = tuya/ver3.3/<Tuya ID>/<Tuya KEY>/<Tuya IP>/command`
 
 `Custom On/Open Value = 0`
 
