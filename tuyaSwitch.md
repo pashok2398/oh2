@@ -17,15 +17,15 @@
 
 `cd /lib/systemd/system/`
 
-`sudo vi tuyaapi-mqtt.service`
+`sudo vi tuya-mqtt.service`
 
 ```
 #!/bin/sh -
 [Unit]
-Description=tuyaapi-mqtt
+Description=tuya-mqtt
 
 [Service]
-ExecStart=/usr/bin/node /etc/openhab2/scripts/tuyaapi_mqtt/tuya-mqtt.js
+ExecStart=/usr/bin/node /etc/openhab2/scripts/tuya-mqtt/tuya-mqtt.js
 Restart=always
 User=openhabian
 Group=openhabian
@@ -35,14 +35,14 @@ WorkingDirectory=/usr/bin/
 
 [Install]
 WantedBy=multi-user.target
-Alias=tuyaapi-mqtt.service
+Alias=tuya-mqtt.service
 ```
 
 ```
-sudo chmod 644 /lib/systemd/system/tuyaapi-mqtt.service
+sudo chmod 644 /lib/systemd/system/tuya-mqtt.service
 sudo systemctl daemon-reload
-sudo systemctl enable tuyaapi-mqtt.service
-sudo systemctl start tuyaapi-mqtt.service
+sudo systemctl enable tuya-mqtt.service
+sudo systemctl start tuya-mqtt.service
 ```
 
 ## Get Tuya device IP
