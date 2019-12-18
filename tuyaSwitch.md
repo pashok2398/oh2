@@ -66,9 +66,9 @@ Configuration -> Things -> Generic MQTT Thing -> Channels -> + -> :
 
 `MQTT Command Topic = tuya/ver3.3/<Tuya ID>/<Tuya KEY>/<Tuya IP>/command`
 
-`Custom On/Open Value = 0`
+`Custom On/Open Value = 1`
 
-`Custom Off/Closed Value = 1`
+`Custom Off/Closed Value = 0`
 
 Configuration -> Things -> Generic MQTT Thing -> Channels -> <Channel Name> -> Linked items -> + -> 
 `Please select a profile: Default`
