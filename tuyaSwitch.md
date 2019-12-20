@@ -11,7 +11,7 @@
 
 `cp config.json.sample config.json`
 
-`DEBUG=* tuya-mqtt.js`
+`DEBUG=* node tuya-mqtt.js`
 
 ## Create systemd service
 
